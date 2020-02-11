@@ -1,0 +1,10 @@
+name: 'Sonarqube Scanner'
+description: 'Scan code using Sonarqube'
+author: 'BeeTech Engineers'
+inputs:
+    login:
+        description: 'Sonarqube login'
+        required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
