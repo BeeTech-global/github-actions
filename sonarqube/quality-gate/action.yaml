@@ -1,0 +1,13 @@
+name: 'Sonarqube Quality Gate'
+description: 'Validate Sonarqube Quality Gate'
+author: 'BeeTech Engineers'
+inputs:
+  login:
+    description: 'Sonarqube login'
+    required: true
+  url:
+    description: 'Sonarqube URL with project id'
+    required: true
+runs:
+  using: 'node13'
+  main: 'index.js'
