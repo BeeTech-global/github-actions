@@ -37,9 +37,8 @@ try {
             ]);
           });
 
-        const result = table.toString();
-        console.log(result);
-        core.setFailed(result);
+        console.log(table.toString());
+        core.setFailed('Quality gate failed. Please review the table above.');
       } else {
         console.log('Everything ok!')
       }
